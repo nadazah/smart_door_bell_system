@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    background: url('/img/rm422-047.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gradient-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.hero-image {
+    position: absolute;
+    border-radius: 20px;
+  
+}
+
+.hero1 { width: 100px;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  top: 10px;
+  transform: translateX(20px) translateY(50px) rotate(-15deg); }
+.hero2 { width: 100px;
+  height: auto;
+  border-radius: 20px;
+  position: absolute;
+  top: -30px;
+  left: 100px;
+  transform: translateX(50px) translateY(50px) rotate(-5deg); }
+.hero3 { width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  position: absolute;
+  top: 130px;
+  left: -50px;
+  transform: translateX(50px) translateY(50px) rotate(15deg); }
+.hero4 { width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  position: absolute;
+  top: 110px;
+  left: 100px;
+  transform: translateX(50px) translateY(50px) rotate(-15deg); }
+
+.content {
+    position: absolute;
+    color: rgb(42, 105, 47);
+    top: 400;
+    padding: 0 22px;
+    width: 100%;
+}
+
+.title {
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.subtitle {
+    font-size: 46;
+    font-weight: 800;
+}
+
+.text-container {
+  margin: 22px 0;
+}
+
+.description {
+    font-size: 16px;
+    color: rgb(42, 105, 47);
+    margin: 4px 0;
+    
+}
+
+.button {
+  padding-bottom: 16px;
+  padding-top: 10px;
+  border-color: rgb(42, 105, 47);
+  border-width: 2px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  color: rgb(42, 105, 47);
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.already-have-account {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(1, 1, 1);
+}
+
+.login-link {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .gradient-container {
+    position: relative;
+    width: 100vw;
+    height: 50%;
+    
+  }
+  
+
+  
+}

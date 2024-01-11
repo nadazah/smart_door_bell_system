@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+.sec {
+    background: url('/img/rm422-047.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 95px;
+    padding-top: 50px;
+    
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+
+header {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 30px 100px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+   background-color: rgba(192, 219, 179, 0.977);
+   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
+   border-radius: 1%; 
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgba(192, 219, 179, 0.977); /* Ajout d'une couleur de fond */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, .navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+
+h1 {
+    font-size: x-large;
+    margin-bottom: 50px;
+    font-family: 'sans-serif';
+    color: #5e615f;
+    text-align: center; /* Center the text horizontally */
+    display: block; /* Ensure it takes the full width available */
+}
+
+table {
+    width: 70%;
+    margin: 0 auto; /* Marges automatiques pour centrer horizontalement */
+    box-sizing: border-box; /* Assurez-vous que la marge est incluse dans la largeur totale */
+}
+
+thead th, tbody td {
+    padding: 10px; /* Ajout de rembourrage aux cellules du tableau */
+    text-align: center; /* Centrage du texte dans les cellules */
+    background-color: rgba(255, 255, 255, 0.9); /* Ajout d'une couleur de fond pour améliorer la lisibilité */
+    border: 1px solid #ddd; /* Ajout de bordures pour séparer les cellules */
+}
+
+
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  
+
+    header {
+      position: absolute;
+      padding: 5px 5px;
+      top: 0;
+      left: 0;
+      width: 100%;
+      display:flex;
+      justify-content: space-between; /* Adjusted alignment for smaller screens */
+      align-items: center;
+      z-index: 30; 
+     }
+  
+    .logo {
+      font-size: 1em;
+      color: #359381;
+      margin-right: 10px;
+      pointer-events: none;
+      margin-left: 10px;
+      /* Removed margin for smaller screens */
+    }
+    .navigation {
+      display:inline-block;
+      align-items: center; /* Center the navigation items for smaller screens */
+      margin-top: 20px; /* Adjusted margin for smaller screens */
+    }
+    .navigation a {
+      text-decoration: none;
+      color: #359381;
+      padding: 1px 10px; /* Adjusted padding for smaller screens */
+      border-radius: 20px;
+      margin: 2px 0; /* Adjusted margin for smaller screens */
+      font-weight: 500;
+      font-size: 0.7em;
+      
+     }
+
+     .sec {
+        background: url('/img/rm422-047.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-top:50px;
+        padding-top: 50px;
+        width: 100%;
+        
+    }
+    table {
+        width: 50%;
+        margin: 0 auto; /* Marges automatiques pour centrer horizontalement */
+        box-sizing: border-box; /* Assurez-vous que la marge est incluse dans la largeur totale */
+    }
+    
+    thead th, tbody td {
+        padding: 1px; /* Ajout de rembourrage aux cellules du tableau */
+        text-align: center; /* Centrage du texte dans les cellules */
+        background-color: rgba(255, 255, 255, 0.9); /* Ajout d'une couleur de fond pour améliorer la lisibilité */
+        border: 1px solid #ddd; /* Ajout de bordures pour séparer les cellules */
+        font-size: 0.7em;
+    }
+    
+    
+    
+}

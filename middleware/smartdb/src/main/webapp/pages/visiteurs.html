@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Visiteurs</title>
+    <!-- materialize icons, css & js -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    <!-- iOS support -->
+  
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#FFE1C4">
+    <script src="../js/refresh.js"></script>
+    <link type="text/css" href="/css/visiteurs.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <h2 class="logo">Smartdb</h2>
+        <nav class="navigation">
+          <a href="../pages/profile.html" class="active">Home</a>
+          <a href="#about-section">About us</a>
+          <a href="../pages/visiteurs.html">Visitors</a>
+          <a id="logout-button" class="waves-effect waves-teal btn-flat">Logout</a>
+        </nav>
+    </header>
+
+
+    <section class="sec">
+        <h1>Liste des Visiteurs</h1>
+        <div id="notification-container"></div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Image</th>
+                    <th>Résultat</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody id="visiteurs-table-body"></tbody>
+        </table>
+    </section>
+    
+    <script src="../js/notifications.js"></script>
+    <script src="../js/visiteurs.js"></script>
+    <script src="../js/logout.js"></script>
+</body>
+</html>

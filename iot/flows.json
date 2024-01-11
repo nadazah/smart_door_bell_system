@@ -1,0 +1,206 @@
+[
+    {
+        "id": "b89f85bcff3471c1",
+        "type": "tab",
+        "label": "Flux 2",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8e669cbc119519c8",
+        "type": "exec",
+        "z": "b89f85bcff3471c1",
+        "command": "python3 /home/aymen/face_recognition/facial_recognition/predict_single.py",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "60",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 470,
+        "y": 300,
+        "wires": [
+            [
+                "5a273de843825afc"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "9f92c3bc439020f0",
+        "type": "mqtt out",
+        "z": "b89f85bcff3471c1",
+        "name": "",
+        "topic": "test",
+        "qos": "0",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "b031b4c6c876defb",
+        "x": 1170,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "3ac2c3e4a919112e",
+        "type": "inject",
+        "z": "b89f85bcff3471c1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "8e669cbc119519c8"
+            ]
+        ]
+    },
+    {
+        "id": "5a273de843825afc",
+        "type": "json",
+        "z": "b89f85bcff3471c1",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 870,
+        "y": 300,
+        "wires": [
+            [
+                "0b30dcbd6a0cd340"
+            ]
+        ]
+    },
+    {
+        "id": "0b30dcbd6a0cd340",
+        "type": "function",
+        "z": "b89f85bcff3471c1",
+        "name": "function 3",
+        "func": "//msg.payload={\"data\":msg.payload}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1020,
+        "y": 300,
+        "wires": [
+            [
+                "9f92c3bc439020f0"
+            ]
+        ]
+    },
+    {
+        "id": "4803dfd4aca36cf4",
+        "type": "mqtt in",
+        "z": "b89f85bcff3471c1",
+        "name": "",
+        "topic": "servomotor",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "b031b4c6c876defb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 420,
+        "wires": [
+            [
+                "a5b10fcdcfdfeeaf"
+            ]
+        ]
+    },
+    {
+        "id": "a5b10fcdcfdfeeaf",
+        "type": "exec",
+        "z": "b89f85bcff3471c1",
+        "command": "python3 /home/aymen/face_recognition/facial_recognition/servo.py",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 820,
+        "y": 420,
+        "wires": [
+            [
+                "b7735a35cc9ddcde"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "b7735a35cc9ddcde",
+        "type": "debug",
+        "z": "b89f85bcff3471c1",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1160,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b031b4c6c876defb",
+        "type": "mqtt-broker",
+        "name": "broker",
+        "broker": "wss://mqtt.smartdb.me:8083",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    }
+]

@@ -1,0 +1,42 @@
+/* styles.css */
+
+/* Ajoutez le style CSS pour la page Data ici */
+
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .paragraph {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+
+  
+  .sensor-image {
+    width: 100px;
+    height: auto; /* Cela garantit que la hauteur est ajustée proportionnellement à la largeur */
+    object-fit: cover; /* Cela garantit que l'image remplit les dimensions sans déformer les proportions */
+  }
+  /* Autres styles CSS nécessaires selon votre préférence */
+  

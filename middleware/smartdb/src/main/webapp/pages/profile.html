@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>User Profile</title>
+    <!-- materialize icons, css & js -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+    <!-- iOS support -->
+  
+    <meta name="apple-mobile-web-app-status-bar" content="#FFE1C4">
+    <meta name="theme-color" content="#FFE1C4">
+    <script src="../js/refresh.js"></script>
+    <link type="text/css" href="/css/profile.css" rel="stylesheet">
+</head>
+<body>
+  <header> 
+    <h2 class="logo">Smartdb</h2>
+    <nav class="navigation">
+      <a href="../pages/profile.html" class="active">Home</a>
+      <a href="#about-section">About us</a>
+      <a href="../pages/visiteurs.html">Visitors</a>
+      <a id="logout-button" class="waves-effect waves-teal btn-flat">Logout</a>
+    </nav>
+  </header>
+  <div id="notification-container"></div>
+  
+  <section class="parallax">
+    <img src="../img/hill1.png" id="hill1">
+    <img src="../img/hill2.png" id="hill2">
+    <img src="../img/hill3.png" id="hill3">
+    <img src="../img/hill4.png" id="hill4">
+    <img src="../img/hill5.png" id="hill5">
+    <img src="../img/tree.png" id="tree">
+    <h2 id="text">Hi <span id="user-fullname"></span></h2>
+    <img src="../img/leaf.png" id="leaf">
+    <img src="../img/plant.png" id="plant">
+  </section>
+  
+  <section id="about-section" class="sec">
+    <h2>About us</h2>
+    <p> 
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sodales nibh ut velit vestibulum, vel feugiat leo aliquet.<br> Nullam egestas nunc id velit eleifend dictum. Sed consequat ut lectus non gravida. Donec et tellus mattis,<br> pretium nisi ac, dignissim ligula. Sed et porta eros, sit amet lacinia nisi. Quisque ultricies nulla blandit<br> odio bibendum, nec sagittis metus luctus. Curabitur et nibh eu velit blandit egestas a eget nunc. <br>Donec efficitur lorem tempus, viverra arcu et, sagittis nisl.
+
+Mauris viverra est et egestas porta. Suspendisse commodo neque et lacus ornare, non lobortis ligula sagittis. Phasellus a lacus mattis, <br>viverra tellus quis, laoreet arcu. Nullam hendrerit id ligula in cursus. Nam nisi orci,<br> porttitor at erat a, vulputate tempor nulla. In placerat est a metus lobortis, ac vulputate mi cursus. Sed id luctus nibh,<br> et ullamcorper tortor. Nullam vestibulum orci augue, iaculis eleifend massa tincidunt nec.
+
+Phasellus non quam euismod augue blandit ullamcorper. Vivamus hendrerit augue ipsum, id egestas quam blandit a.<br> Nam efficitur consequat quam. Aenean dignissim pharetra erat quis placerat. Maecenas lorem magna, tincidunt sit<br> amet faucibus vitae, aliquet at turpis. Donec dapibus dolor sit amet nibh vehicula vulputate. Ut leo erat, auctor sit amet <br>ultrices vel, pharetra eget enim. Praesent id purus sit amet sapien egestas laoreet.
+
+Fusce at mi vitae orci laoreet fringilla. Curabitur in mauris quis diam elementum vestibulum et eget libero.<br> Phasellus nec cursus tortor. Vestibulum faucibus quam velit, vitae posuere nisl rhoncus in. Duis mollis tellus sed<br> enim dapibus egestas. Donec semper, nisi sed tincidunt aliquam, sem felis vehicula mauris, quis lacinia enim justo vel est<br>. Nullam vel magna nunc. Duis nulla ante, suscipit non augue non, faucibus dictum diam. Mauris laoreet arcu sit amet<br> iaculis bibendum. Suspendisse sit amet iaculis neque. In sit amet risus a enim blandit aliquet.<br> Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <br>Sed maximus diam nec semper suscipit. Aliquam venenatis vulputate<br> eros eget scelerisque. Nulla sed quam nec ligula dictum ultrices.
+
+Etiam fringilla neque sit amet urna sodales imperdiet. Etiam eu volutpat turpis.<br> Donec finibus diam nunc. Mauris porttitor justo eget vestibulum vestibulum. Suspendisse eget nulla ipsum. Aenean enim enim, cursus nec tortor quis,<br> porta facilisis enim. Mauris at lectus sed neque fermentum malesuada. Suspendisse at lobortis libero. Mauris id velit purus. <br>Aliquam vestibulum consectetur nulla, sit amet consectetur ipsum varius id. Curabitur posuere mi a nisl eleifend,<br> vel auctor libero pulvinar. Nulla suscipit nisl facilisis consectetur tempor.<br> Curabitur sed facilisis nunc. Duis et libero aliquam, malesuada risus quis, scelerisque libero. <br>Sed vestibulum pulvinar blandit. Vestibulum ac convallis libero, in pulvinar augue.
+    </p>   
+  </section>
+  
+  
+  <script src="../js/notifications.js"></script>
+  <script src="../js/profile.js"></script>
+  <script src="../js/logout.js"></script>
+  <script src="../js/script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
